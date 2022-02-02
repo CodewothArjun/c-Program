@@ -1,2 +1,2 @@
-Arjun 3 45
-Sitaram 4 65
+Arjun	 3	 53
+Sitaram	 5	 23

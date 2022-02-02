@@ -7,7 +7,7 @@ int main()
     int age, roll, i, n;
     printf("Enter a no. of student: ");
     scanf("%d", &n);
-    
+   
     for (i = 0; i < n; i++)
     {
         printf("Enter a name and roll no. and age: ");

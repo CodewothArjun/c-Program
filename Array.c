@@ -47,6 +47,7 @@ int main()
         }
     }
 
+    // Priting the output
     printf("The sorted number in ascending order are : ");
     for (i = 0; i < 10; i++)
     {

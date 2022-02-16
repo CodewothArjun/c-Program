@@ -9,7 +9,9 @@ int main()
 
     printf("Enter your name : ");
     // gets(name);
-    scanf("%s", &name);
+    scanf("%s", 
+    
+    &name);
 
     printf("Enter a value of n : ");
     scanf("%d", &n);

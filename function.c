@@ -43,3 +43,28 @@
 //     }
 // }
 
+// C program using user defined function to calculate x raise to power y
+#include <stdio.h>
+int power(int, int);
+int main()
+{
+    int x, y, p;
+    printf("Enter a value of base x :");
+    scanf("%d", &x);
+    printf("\nEnter a value of power y:");
+    scanf("%d", &y);
+    // calculation
+    p = power(x, y);
+    printf("x raise to the power y : %d", p);
+    return 0;
+}
+int power(int x, int y)
+{
+    int i;
+    int p = 1;
+    for (i = 1; i <= y; i++)
+    {
+        p = p * x;
+    }
+    return p;
+}

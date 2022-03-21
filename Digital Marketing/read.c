@@ -10,11 +10,11 @@ void main()
     read = fopen("register.txt", "r");
 
     // Printing the output
-
+    printf("\n\tHere is your Stored Data.\n\n");
     while (fscanf(read, "%s %s %s %s \n", &f_name, &l_name, &email, &password) != EOF)
     {
-        printf("\n\t%s\t\t\t%s\t\t\t %s\t\t\t%s",f_name,l_name,email,password);
+        printf("\n\t%s\t\t\t%s\t\t\t %s\t\t\t%s", f_name, l_name, email, password);
     }
     fclose(read);
-    return 0;
+    getch();
 }

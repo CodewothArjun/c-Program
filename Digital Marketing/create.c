@@ -21,4 +21,5 @@ void main()
     // Printing the output
     fprintf(create, "First_Name\tLast_Name\tEmail\t\t\t\t\tPassword \n");
     fprintf(create, "%s\t\t%s\t\t%s\t%s \n", f_name, l_name, email, password);
+    
 }

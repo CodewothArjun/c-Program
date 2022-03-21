@@ -1,2 +1,2 @@
-First_Name 	Last_Name 	 Email 						 Password 
-Arjunt		Rokka 		arjunrokka@gmail.con	arju1234 
+First_Name 	 Last_Name 	 Email 						 Password 
+Arjunt		Rokka 		arjunrokka@gmail.com  	Riojad134 

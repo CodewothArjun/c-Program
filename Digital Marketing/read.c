@@ -16,4 +16,5 @@ void main()
         printf("\n\t%s\t\t\t%s\t\t\t %s\t\t\t%s",f_name,l_name,email,password);
     }
     fclose(read);
+    return 0;
 }

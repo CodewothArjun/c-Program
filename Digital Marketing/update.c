@@ -21,4 +21,5 @@ int main()
     fprintf(update, "%st\t\t%s \t\t%s  \t%s \n", f_name, l_name, email, password);
     fclose(update);
     return 0;
+    
 }

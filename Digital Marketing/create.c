@@ -19,7 +19,7 @@ void main()
     scanf("%s", &password);
 
     // Printing the output
-    fprintf(create, "First_Name\tLast_Name\tEmail\t\t\t\t\tPassword \n");
-    fprintf(create, "%s\t\t%s\t\t%s\t%s \n", f_name, l_name, email, password);
-    
+    fprintf(create, "First_Name \t Last_Name \t Email \t\t\t\t\t\t Password \n");
+    fprintf(create, "%st\t\t%s \t\t%s  \t%s \n", f_name, l_name, email, password);
+    fclose(create);
 }

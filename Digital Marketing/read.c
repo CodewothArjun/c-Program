@@ -11,9 +11,9 @@ void main()
 
     // Printing the output
 
-    while (fscanf(read, "%s\t\t%s\t\t%s\t%s \n", f_name, l_name, email, password) != EOF)
+    while (fscanf(read, "%s %s %s %s \n", &f_name, &l_name, &email, &password) != EOF)
     {
-        printf(read, "First_Name\tLast_Name\tEmail\t\t\t\t\tPassword \n");
+        printf("\n\t%s\t\t\t%s\t\t\t %s\t\t\t%s",f_name,l_name,email,password);
     }
     fclose(read);
 }

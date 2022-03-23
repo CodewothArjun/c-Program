@@ -23,7 +23,7 @@ void main()
         printf(stderr, "can't open file");
         exit(0);
     }
-
+    
     while (fread(&s1.sizeof(struct delete), 1, fp1))
     {
         if (s1.email != email)

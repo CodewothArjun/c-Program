@@ -9,34 +9,34 @@ struct delete
 
 void main()
 {
-    FILE *fp1, fp2;
-    struct delete s1;
+    FILE *del, *cpy;
+    struct delete cus;
     char email[60];
     printf("Enter the email address you want to delete: ");
     scanf("%s", email);
 
-    fp1 = fopen("register.txt", "r+");
-    fp2 = fopen("copy.txt", "a+");
+    del = fopen("register.txt", "r+");
+    cpy = fopen("copy.txt", "a+");
 
-    if (fp1 == NULL)
+    if (del == NULL)
     {
         printf(stderr, "can't open file");
         exit(0);
     }
 
-    while (fread(&s1.sizeof(struct delete), 1, fp1))
+    while (fread(&cus.sizeof(struct delete), 1, del))
     {
-        if (s1.email != email)
+        if (cus.email != email)
         {
-            fwrite(&s1, sizeof(struct delete), 1, fp2)
+            fwrite(&cus, sizeof(struct delete), 1, cpy);
         }
     }
 
-    fclose(fp1);
-    fclose(fp2);
+    fclose(del);
+    fclose(cpy);
 
     remove("register.txt");
     rename("copy.txt", "register.txt");
     printf("Record deleted successfully.");
-    return 0;
+    getch();
 }

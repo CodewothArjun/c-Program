@@ -6,10 +6,11 @@ void select(int);
 void update(int);
 void delet(int);
 void home(void);
-void logout(void);
+void update_out(void);
 int ho;
 void main()
 {
+    system("cls");
     home();
 }
 // welocme page
@@ -194,7 +195,7 @@ void update(int choice)
     {
         remove("user.txt");
         rename("nuser.txt", "user.txt");
-        logout();
+        update_out();
     }
     else
     {
@@ -210,7 +211,7 @@ void update(int choice)
     }
 }
 
-void logout()
+void update_out()
 {
     printf("Now, Enter your new information\n");
     char temp, name[90], vaccine[90], email[90], na[90], va[90], em[90];

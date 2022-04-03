@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <windows.h>
+#include <string.h>
 #define ENTER 13
 #define TAB 9
 #define BCKSPC 8
@@ -16,6 +17,7 @@ struct user
 
 void takeinput(char ch[50])
 {
+    system("cls");
     fgets(ch, 50, stdin);
     ch[strlen(ch) - 1] = 0;
 }
@@ -34,6 +36,7 @@ char generateUsername(char email[50], char username[50])
 
 void takepassword(char pwd[50])
 {
+    system("cls");
     int i;
     char ch;
     while (1)
@@ -62,6 +65,7 @@ void takepassword(char pwd[50])
 
 int main()
 {
+    system("cls");
     system("color 0b");
     FILE *fp;
     int opt, usrFound = 0;
